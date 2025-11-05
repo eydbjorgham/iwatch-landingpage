@@ -28,23 +28,26 @@ export default function Home() {
         <Navbar />
         <SearchBuy />
       </div>
-      <div className="perfect-moment">
-        <div className="perfect-moment-text">
-          <PerfectMoment />
-        </div>
-          <Button />
-        <div className="watch-section"> 
-        <Image 
-          src={watchImages[activeWatch]} 
-          alt={`${activeWatch} watch`} 
-          width={500} 
-          height={500} />
-          </div> 
-          <Circles 
-          onWatchChange={setActiveWatch} 
-          currentWatch={activeWatch} />
+      <div className="col-start-1 col-end-2 row-start-2 row-end-3 ml-10 self-center text-6xl leading-20 text-white">
+        <PerfectMoment />
       </div>
-      <Watches onWatchChange={setActiveWatch} currentWatch={activeWatch} />
+      <div className="text-center text-white text-xl font-bold pt-3 border-5 col-1 row-2 ml-10 h-[65px] w-[230px] self-end rounded-full border-white bg-inherit hover:bg-white transition duration-200 ease-in-out">
+        <Button />
+      </div>
+      <div className="col-start-2 col-end-3 row-start-2">
+        <Image
+          src={watchImages[activeWatch]}
+          alt={`${activeWatch} watch`}
+          width={500}
+          height={500}
+        />
+      </div>
+      <div className="col-3 row-2 self-center">
+        <Circles onWatchChange={setActiveWatch} currentWatch={activeWatch} />
+      </div>
+      <div className="col-2 row-4">
+        <Watches onWatchChange={setActiveWatch} currentWatch={activeWatch} />
+      </div>
     </div>
   );
 }

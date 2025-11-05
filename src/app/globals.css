@@ -1,4 +1,4 @@
-/* @import "tailwindcss"; */
+ @import "tailwindcss"; 
 
 :root {
   --background: linear-gradient(to right, #c8dce5 0%, #b6ccda 100%);
@@ -39,6 +39,7 @@ body {
 .navbar {
   display: grid;
   grid-column: 1 / -1;
+  grid-row: 1;
   padding-left: 2em;
   padding-right: 2em;
   padding-top: 1em;
@@ -50,6 +51,7 @@ body {
   gap: 40px;
   grid-column: 2;
   grid-row: 1;
+  margin-top: 0.5rem;
   }
 
   .nav-links li {
@@ -89,7 +91,7 @@ body {
 
 /******************** Tekst og stort billede ************************/
 
-.perfect-moment {
+/* .perfect-moment {
   display: grid;
   grid-column: 1 / -1;
   grid-row: 2;
@@ -113,13 +115,13 @@ body {
     margin: 0;
     font-weight: normal;
   }
-}
+} */
 
-.watch-section {
+/* .watch-section {
  grid-column: 3 / 4;
  grid-row: 1 / span 2;
  place-self: center;
-}
+} */
 
 /********************** Cirkler ************************/
 .watch-indicators {
@@ -170,13 +172,13 @@ body {
 
 /******************** Knap ************************/
 
-.btn-buy-now {
+/* .btn-buy-now {
   grid-column: 1;
   grid-row: 2;
   background-color: var(--background);
   color: var(--white-color);
   border: 5px solid var(--white-color);
-  /* padding: 10px 10px; */
+   padding: 10px 10px; 
   border-radius: 4em;
   font-size: 1.3em;
   cursor: pointer;
@@ -189,14 +191,14 @@ body {
   background-color: var(--white-color);
   color: var(--accent-color);
   transition: 0.3s;
-}
+} */
 
 /******************** Watches ************************/
 
 .watches-section {
   display: flex;
-  grid-column: 2 / 3;
-  grid-row: 3 / 4;
+  /* grid-column: 2 / 3;
+  grid-row: 3 / 4; */
   place-self: end center;
   gap: 40px;
   padding-bottom: 2em;
