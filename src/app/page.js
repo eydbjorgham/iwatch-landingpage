@@ -45,7 +45,7 @@ export default function Home() {
       <div className="col-3 row-2 self-center">
         <Circles onWatchChange={setActiveWatch} currentWatch={activeWatch} />
       </div>
-      <div className="col-2 row-4">
+      <div className="col-2 row-4 place-self-center">
         <Watches onWatchChange={setActiveWatch} currentWatch={activeWatch} />
       </div>
     </div>
